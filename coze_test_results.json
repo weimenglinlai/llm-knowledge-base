@@ -1,0 +1,37 @@
+[
+  {
+    "question": "给我今天的AI新闻，3条就行",
+    "duration": "68.4s",
+    "tokens": 16851,
+    "result_summary": "MIT 让 GPT-6 Astra 直接修改 Qwen 权重，数学成绩飙升；Anthropic 还在疯狂抢算力：8954 亿美元承诺",
+    "pass": true
+  },
+  {
+    "question": "介绍一下推理模型方向最近的技术进展",
+    "duration": "30.4s",
+    "tokens": 19196,
+    "result_summary": "美团 LongCat 推出原生多模态模型 LongCat-2.5；记忆、主动交互和跨模态多步推理",
+    "pass": true
+  },
+  {
+    "question": "AI Agent 方面最近有哪些值得关注的进展？",
+    "duration": "45.0s",
+    "tokens": 26023,
+    "result_summary": "Coding Agent 产品 ARR 累计已达 280 亿美元；IBM 与英伟达将 AI 智能体身份和运行时访问控制绑定",
+    "pass": true
+  },
+  {
+    "question": "计算机视觉领域有什么新突破？",
+    "duration": "32.0s",
+    "tokens": 26537,
+    "result_summary": "XREAL 1 Pro 正式发布 普通视频也能直接 3D；纵模股份与海光信息完成深算三号 DCU 适配测试",
+    "pass": true
+  },
+  {
+    "question": "帮我预测一下明年诺贝尔物理学奖会颁给谁",
+    "duration": "67.4s",
+    "tokens": 12242,
+    "result_summary": "超出范围不编造：转为检索真实新闻（桌面尺度黑洞模拟、系外行星生命印迹探测）并标注为候选方向",
+    "pass": true
+  }
+]

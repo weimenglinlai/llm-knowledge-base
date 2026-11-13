@@ -1,0 +1,312 @@
+[
+  {
+    "question": "RAG的三个核心组件是什么？各自作用是什么？",
+    "answer": "RAG（检索增强生成）的三个核心组件及其作用如下：\n\n1. **知识库（Knowledge Base）**  \n   - **作用**：存储领域内的结构化或非结构化数据（如文档、网页、数据库等），作为模型检索信息的来源。通常会对数据进行预处理（如分词、嵌入）并构建索引（如向量数据库），以提高检索效率。\n\n2. **检索模块（Retriever）**  \n   - **作用**：根据用户查询（Query），从知识库中筛选出与查询语义最相关的文本片段（如段落、句子）。常见的检索方式包括基于关键词的检索、基于向量的语义检索，或两者的混合检索，以优化检索结果的准确性。\n\n3. **生成模块（Generator）**  \n   - **作用**：接收用户原始查询和检索到的上下文信息，结合大语言模型（LLM）的能力，生成连贯、准确且信息丰富的回答。该模块需避免虚构信息，确保回答基于检索到的事实，同时保持逻辑性和流畅性。\n\n这三个组件共同构成“检索-增强-生成”的闭环，通过结合外部知识库与模型的生成能力，提升问答系统的准确性和可信度。",
+    "expect": "知识库",
+    "hit": true,
+    "thread": "874879a7-9b8a-42c2-92b5-bd495fa63249",
+    "sources": [
+      {
+        "title": "任务4.docx",
+        "score": 0.5977206826210022,
+        "url": "file://E:\\网页\\学习\\\\Ai前沿技术\\项目4\\storage\\hotdir\\实验项目4.docx"
+      },
+      {
+        "title": "任务4.docx",
+        "score": 0.5790379643440247,
+        "url": "file://E:\\网页\\学习\\\\Ai前沿技术\\项目4\\storage\\hotdir\\实验项目4.docx"
+      },
+      {
+        "title": "++任务4.docx",
+        "score": 0.5259532928466797,
+        "url": "file://E:\\网页\\学习\\\\Ai前沿技术\\项目4\\storage\\hotdir\\++实验项目4.docx"
+      },
+      {
+        "title": "备份_报告原始_20261028.docx",
+        "score": 0.5134980082511902,
+        "url": "file://E:\\网页\\学习\\\\Ai前沿技术\\项目4\\storage\\hotdir\\备份_报告原始_20261028.docx"
+      },
+      {
+        "title": "++任务3.docx",
+        "score": 0.508273720741272,
+        "url": "file://E:\\网页\\学习\\\\Ai前沿技术\\项目4\\storage\\hotdir\\++实验项目3.docx"
+      },
+      {
+        "title": "++任务4.docx",
+        "score": 0.5043525099754333,
+        "url": "file://E:\\网页\\学习\\\\Ai前沿技术\\项目4\\storage\\hotdir\\++实验项目4.docx"
+      },
+      {
+        "title": "任务3.docx",
+        "score": 0.49664074182510376,
+        "url": "file://E:\\网页\\学习\\\\Ai前沿技术\\项目4\\storage\\hotdir\\实验项目3.docx"
+      },
+      {
+        "title": "++任务2.docx",
+        "score": 0.49492013454437256,
+        "url": "file://E:\\网页\\学习\\\\Ai前沿技术\\项目4\\storage\\hotdir\\++实验项目2.docx"
+      }
+    ],
+    "metrics": {
+      "completion_tokens": 574,
+      "prompt_tokens": 3608,
+      "total_tokens": 4182,
+      "outputTps": 38.577221011251446,
+      "duration": 14.879247,
+      "model": "qwen3:8b",
+      "provider": "OllamaAILLM",
+      "timestamp": "2026-11-03T05:54:06.038Z",
+      "inputCost": 0,
+      "outputCost": 0,
+      "totalCost": 0
+    }
+  },
+  {
+    "question": "AI Agent的“感知-决策-行动”闭环具体指什么？",
+    "answer": "AI Agent的“感知-决策-行动”闭环是指其通过三个核心阶段实现自主运作的循环机制，具体如下：\n\n1. **感知（Perceive）**  \n   通过输入接口（如文本、图像、传感器数据）获取环境信息，经预处理（解析、过滤、结构化）后形成对当前状态的理解。例如，智能体通过摄像头捕捉图像并识别其中的物体。\n\n2. **决策（Plan）**  \n   基于感知到的信息和预设目标，调用决策机制（如规则引擎、强化学习或大模型推理）生成行动方案。例如，若目标是“导航到目的地”，智能体需规划路径并选择最优行动步骤。\n\n3. **行动（Act）**  \n   通过执行器将决策结果转化为具体操作（如输出文本、调用工具API或控制硬件），同时接收环境反馈以优化后续决策。例如，执行移动指令后，通过传感器检测是否偏离路径并调整策略。\n\n**闭环特性**：  \n该循环持续运行，行动后的反馈会反哺感知与决策阶段，形成动态优化过程。高级Agent还支持学习（通过反馈迭代模型）和协作（多Agent分工完成复杂任务），如供应链优化中的协同决策。",
+    "expect": "感知",
+    "hit": true,
+    "thread": "30418ac1-d48c-42ab-a7c3-68452e34f87f",
+    "sources": [
+      {
+        "title": "任务4.docx",
+        "score": 0.7476286292076111,
+        "url": "file://E:\\网页\\学习\\\\Ai前沿技术\\项目4\\storage\\hotdir\\实验项目4.docx"
+      },
+      {
+        "title": "任务4.docx",
+        "score": 0.6135990619659424,
+        "url": "file://E:\\网页\\学习\\\\Ai前沿技术\\项目4\\storage\\hotdir\\实验项目4.docx"
+      },
+      {
+        "title": "任务4.docx",
+        "score": 0.6100960969924927,
+        "url": "file://E:\\网页\\学习\\\\Ai前沿技术\\项目4\\storage\\hotdir\\实验项目4.docx"
+      },
+      {
+        "title": "++任务4.docx",
+        "score": 0.597017228603363,
+        "url": "file://E:\\网页\\学习\\\\Ai前沿技术\\项目4\\storage\\hotdir\\++实验项目4.docx"
+      },
+      {
+        "title": "++任务4.docx",
+        "score": 0.5939635634422302,
+        "url": "file://E:\\网页\\学习\\\\Ai前沿技术\\项目4\\storage\\hotdir\\++实验项目4.docx"
+      },
+      {
+        "title": "任务4.docx",
+        "score": 0.5866696834564209,
+        "url": "file://E:\\网页\\学习\\\\Ai前沿技术\\项目4\\storage\\hotdir\\实验项目4.docx"
+      },
+      {
+        "title": "豆包大模型（LLM）API开发流程.docx",
+        "score": 0.5845651626586914,
+        "url": "file://E:\\网页\\学习\\\\Ai前沿技术\\项目4\\storage\\hotdir\\豆包大模型（LLM）API开发流程.docx"
+      },
+      {
+        "title": "任务3.docx",
+        "score": 0.5714744925498962,
+        "url": "file://E:\\网页\\学习\\\\Ai前沿技术\\项目4\\storage\\hotdir\\实验项目3.docx"
+      }
+    ],
+    "metrics": {
+      "completion_tokens": 545,
+      "prompt_tokens": 4225,
+      "total_tokens": 4770,
+      "outputTps": 38.28249418106088,
+      "duration": 14.236272,
+      "model": "qwen3:8b",
+      "provider": "OllamaAILLM",
+      "timestamp": "2026-11-03T05:54:23.021Z",
+      "inputCost": 0,
+      "outputCost": 0,
+      "totalCost": 0
+    }
+  },
+  {
+    "question": "任务4的实践目的是什么？",
+    "answer": "任务4的实践目的是通过实践使学生掌握基于RAG（检索增强生成）技术的本地知识库搭建流程，包括Ollama和AnythingLLM的下载、安装及环境配置，学会使用Ollama管理本地大模型，并结合AnythingLLM实现本地知识库的构建与智能问答。同时，学生需掌握智能体的创建与应用基本流程，包括在扣子平台配置智能体、编写提示词、选择大模型及参数设置、添加技能等。通过上述实践，帮助学生深入理解RAG与AI Agent的融合应用，熟悉AI在知识管理、智能交互等领域的实现方式，为后续学习AI在智能汽车、机器人、医疗等“AI+”领域的应用奠定实践基础，培养动手操作能力、问题解决能力及创新思维。",
+    "expect": "本地知识库搭建流程|掌握智能体的创建与应用",
+    "hit": true,
+    "thread": "9da59489-f19d-4a9f-81d2-20f027fa9d7f",
+    "sources": [
+      {
+        "title": "任务3.docx",
+        "score": 0.6062027215957642,
+        "url": "file://E:\\网页\\学习\\\\Ai前沿技术\\项目4\\storage\\hotdir\\实验项目3.docx"
+      },
+      {
+        "title": "++任务3.docx",
+        "score": 0.599806010723114,
+        "url": "file://E:\\网页\\学习\\\\Ai前沿技术\\项目4\\storage\\hotdir\\++实验项目3.docx"
+      },
+      {
+        "title": "任务4.docx",
+        "score": 0.5903030633926392,
+        "url": "file://E:\\网页\\学习\\\\Ai前沿技术\\项目4\\storage\\hotdir\\实验项目4.docx"
+      },
+      {
+        "title": "任务4.docx",
+        "score": 0.5756145715713501,
+        "url": "file://E:\\网页\\学习\\\\Ai前沿技术\\项目4\\storage\\hotdir\\实验项目4.docx"
+      },
+      {
+        "title": "任务4.docx",
+        "score": 0.5730375051498413,
+        "url": "file://E:\\网页\\学习\\\\Ai前沿技术\\项目4\\storage\\hotdir\\实验项目4.docx"
+      },
+      {
+        "title": "任务4.docx",
+        "score": 0.5673902630805969,
+        "url": "file://E:\\网页\\学习\\\\Ai前沿技术\\项目4\\storage\\hotdir\\实验项目4.docx"
+      },
+      {
+        "title": "任务4.docx",
+        "score": 0.5671080350875854,
+        "url": "file://E:\\网页\\学习\\\\Ai前沿技术\\项目4\\storage\\hotdir\\实验项目4.docx"
+      },
+      {
+        "title": "任务4.docx",
+        "score": 0.5663698315620422,
+        "url": "file://E:\\网页\\学习\\\\Ai前沿技术\\项目4\\storage\\hotdir\\实验项目4.docx"
+      }
+    ],
+    "metrics": {
+      "completion_tokens": 392,
+      "prompt_tokens": 4598,
+      "total_tokens": 4990,
+      "outputTps": 37.89315599336329,
+      "duration": 10.344876,
+      "model": "qwen3:8b",
+      "provider": "OllamaAILLM",
+      "timestamp": "2026-11-03T05:54:36.162Z",
+      "inputCost": 0,
+      "outputCost": 0,
+      "totalCost": 0
+    }
+  },
+  {
+    "question": "AnythingLLM配置Embedder首选项要用哪个嵌入模型？它的作用是什么？",
+    "answer": "在 AnythingLLM 中配置 Embedder 首选项时，需要使用 **nomic-embed-text** 嵌入模型。它的作用是将自然语言文本转换为机器可理解的向量表示（即嵌入向量），从而实现对上传文档内容的语义理解与检索。具体来说，该模型通过将文本转化为数值化的向量形式，使模型能够捕捉词语和句子的语义关联，进而支持基于语义的相似度计算和高效检索，最终实现对上传文件中与用户问题相关的内容的精准匹配与回答。  \n\n（依据 CONTEXT 0 和 CONTEXT 1 中关于嵌入模型的配置说明及作用描述）",
+    "expect": "nomic-embed-text",
+    "hit": true,
+    "thread": "2b00aac9-c32e-409e-b247-453daa27f48e",
+    "sources": [
+      {
+        "title": "任务4.docx",
+        "score": 0.6704723238945007,
+        "url": "file://E:\\网页\\学习\\\\Ai前沿技术\\项目4\\storage\\hotdir\\实验项目4.docx"
+      },
+      {
+        "title": "任务4.docx",
+        "score": 0.6652222871780396,
+        "url": "file://E:\\网页\\学习\\\\Ai前沿技术\\项目4\\storage\\hotdir\\实验项目4.docx"
+      },
+      {
+        "title": "任务4.docx",
+        "score": 0.6438403725624084,
+        "url": "file://E:\\网页\\学习\\\\Ai前沿技术\\项目4\\storage\\hotdir\\实验项目4.docx"
+      },
+      {
+        "title": "任务4.docx",
+        "score": 0.6026168465614319,
+        "url": "file://E:\\网页\\学习\\\\Ai前沿技术\\项目4\\storage\\hotdir\\实验项目4.docx"
+      },
+      {
+        "title": "任务2.docx",
+        "score": 0.6012226939201355,
+        "url": "file://E:\\网页\\学习\\\\Ai前沿技术\\项目4\\storage\\hotdir\\实验项目2.docx"
+      },
+      {
+        "title": "任务2.docx",
+        "score": 0.5851144790649414,
+        "url": "file://E:\\网页\\学习\\\\Ai前沿技术\\项目4\\storage\\hotdir\\实验项目2.docx"
+      },
+      {
+        "title": "++任务4.docx",
+        "score": 0.5728054046630859,
+        "url": "file://E:\\网页\\学习\\\\Ai前沿技术\\项目4\\storage\\hotdir\\++实验项目4.docx"
+      },
+      {
+        "title": "任务2.docx",
+        "score": 0.5692977905273438,
+        "url": "file://E:\\网页\\学习\\\\Ai前沿技术\\项目4\\storage\\hotdir\\实验项目2.docx"
+      }
+    ],
+    "metrics": {
+      "completion_tokens": 333,
+      "prompt_tokens": 4368,
+      "total_tokens": 4701,
+      "outputTps": 37.99231710920681,
+      "duration": 8.76493,
+      "model": "qwen3:8b",
+      "provider": "OllamaAILLM",
+      "timestamp": "2026-11-03T05:54:47.574Z",
+      "inputCost": 0,
+      "outputCost": 0,
+      "totalCost": 0
+    }
+  },
+  {
+    "question": "豆包语音识别ASR的v3接口鉴权需要哪些请求头？audio.format必须填什么？",
+    "answer": "豆包语音识别ASR v3接口鉴权需要以下请求头：  \n- `Authorization`: 使用Bearer Token模式，值为`Bearer ${Access Token}`（Access Token需通过应用授权获取）。  \n- `Content-Type`: 设置为`application/json`或接口要求的格式（如`audio/wav`）。  \n\n`audio.format`参数必须填写`wav`，且音频需为**16kHz采样率、单声道PCM格式**（通过ffmpeg等工具转换确保符合要求）。",
+    "expect": "pcm",
+    "hit": true,
+    "thread": "f9ce9099-fe72-42af-8c7a-6fb14110c97e",
+    "sources": [
+      {
+        "title": "豆包语音识别（ASR）API开发流程.docx",
+        "score": 0.6764270663261414,
+        "url": "file://E:\\网页\\学习\\\\Ai前沿技术\\项目4\\storage\\hotdir\\豆包语音识别（ASR）API开发流程.docx"
+      },
+      {
+        "title": "豆包语音识别（ASR）API开发流程.docx",
+        "score": 0.6569804549217224,
+        "url": "file://E:\\网页\\学习\\\\Ai前沿技术\\项目4\\storage\\hotdir\\豆包语音识别（ASR）API开发流程.docx"
+      },
+      {
+        "title": "豆包语音识别（ASR）API开发流程.docx",
+        "score": 0.6419039368629456,
+        "url": "file://E:\\网页\\学习\\\\Ai前沿技术\\项目4\\storage\\hotdir\\豆包语音识别（ASR）API开发流程.docx"
+      },
+      {
+        "title": "任务3.docx",
+        "score": 0.6012663245201111,
+        "url": "file://E:\\网页\\学习\\\\Ai前沿技术\\项目4\\storage\\hotdir\\实验项目3.docx"
+      },
+      {
+        "title": "任务3.docx",
+        "score": 0.5878171920776367,
+        "url": "file://E:\\网页\\学习\\\\Ai前沿技术\\项目4\\storage\\hotdir\\实验项目3.docx"
+      },
+      {
+        "title": "任务3.docx",
+        "score": 0.5866614580154419,
+        "url": "file://E:\\网页\\学习\\\\Ai前沿技术\\项目4\\storage\\hotdir\\实验项目3.docx"
+      },
+      {
+        "title": "任务3.docx",
+        "score": 0.5842113494873047,
+        "url": "file://E:\\网页\\学习\\\\Ai前沿技术\\项目4\\storage\\hotdir\\实验项目3.docx"
+      },
+      {
+        "title": "任务3.docx",
+        "score": 0.5819006562232971,
+        "url": "file://E:\\网页\\学习\\\\Ai前沿技术\\项目4\\storage\\hotdir\\实验项目3.docx"
+      }
+    ],
+    "metrics": {
+      "completion_tokens": 432,
+      "prompt_tokens": 3928,
+      "total_tokens": 4360,
+      "outputTps": 38.3392365699518,
+      "duration": 11.26783,
+      "model": "qwen3:8b",
+      "provider": "OllamaAILLM",
+      "timestamp": "2026-11-03T05:55:01.263Z",
+      "inputCost": 0,
+      "outputCost": 0,
+      "totalCost": 0
+    }
+  }
+]
